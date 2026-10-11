@@ -13,7 +13,7 @@
 |---|-----------|---------------------|----------------------|
 | 1 | Impact on individual decision-making | McNamara et al. (2018); Hagendorff (2020) §3.3 | Practitioner interview/survey studies |
 | 2 | Organisational & economic pressures, ethics washing | Hagendorff (2020) §3.1–3.2; Floridi (2019) | Industry evidence, e.g. dissolved ethics boards, ethics-team layoffs |
-| 3 | Principles-to-practice gap | Morley et al. (2020); Mittelstadt (2019); DISR (2025) | Evaluations of ethics tools and impact assessments in use |
+| 3 | Principles-to-practice gap | Morley et al. (2020); Mittelstadt (2019); DISR (2025a) | Evaluations of ethics tools and impact assessments in use |
 | 4 | Voluntary vs binding approaches | Munn (2023); Jobin et al. (2019) | EU AI Act comparison; Australian regulatory debate |
 
 ## Notes from S2 (Hagendorff, 2020)
