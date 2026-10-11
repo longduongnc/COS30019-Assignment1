@@ -4,6 +4,8 @@
 
 **Topic 6:** What is the effectiveness of ethics guidelines and principles in practice?
 
+**Due:** 11:59pm Sunday 18 October 2026 (Week 5), via Canvas
+
 ## Progress
 
 | Milestone | Weeks | Deliverable | Status |
