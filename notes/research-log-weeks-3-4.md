@@ -33,3 +33,34 @@
 - Read the National AI Plan itself and confirm how it describes the decision on mandatory guardrails.
 - Confirm page numbers for the Sanderson et al. quotes in the published IEEE version.
 - Consider one figure summarising the awareness → action → enforcement argument.
+
+---
+
+# Week 5 additions (18 October 2026)
+
+## New sources and what they add
+
+| Key issue | Source | Type | What it shows |
+|-----------|--------|------|---------------|
+| 1 | Holstein et al. (2019) | 35 interviews + survey of 267 practitioners | Disconnect between practitioners' fairness problems and research solutions |
+| 1 | Whittlestone et al. (2019) | Conceptual (AIES) | Principles are "often too broad and high-level to guide ethics in practice"; focus on tensions |
+| 1 | Stanford HAI (2026) | AI Index 2026, Ch. 3 | "No framework for navigating these trade-offs" (p. 126) |
+| 2 | Fifth Quadrant (2025) | Survey, n = 418 | Mean RAI score fell 44 → 43; 33% have adopted VAISS; designated roles 25%, oversight 23% |
+| 2 | Madaio et al. (2020) | Co-design with 48 practitioners | Checklists give "organizational infrastructure" where organisations support them |
+| 2 | Stanford HAI (2026, p. 144) | Global organisation survey | No-policy share 24% → 11%; training gaps 51% → 59% |
+| 3 | Lu et al. (2024) | CSIRO pattern catalogue (ACM CSUR) | Without best practice, practitioners have "nothing much beyond truisms" |
+| 3 | Raji et al. (2020); Mökander et al. (2021); Ayling & Chapman (2022) | Audit frameworks and tool reviews | Tools exist but have gaps and organisational constraints |
+| 4 | Rességuier & Rodrigues (2020); Bietti (2020) | Critical analysis | Ethics as a substitute for law is the problem; avoid "ethics bashing" |
+| 4 | Senate Select Committee (2024) | Parliamentary report | Rec. 1: dedicated legislation for high-risk AI |
+| 4 | Productivity Commission (2025) | Inquiry report No. 111 | Rec. 1.2: AI-specific regulation "a last resort"; Box 1.7: guardrails regulate processes, not outcomes |
+| 4 | Evans (2025) | ABC News | National AI Plan: existing laws, $30m advisory AI Safety Institute |
+| 4 | Royal Commission into the Robodebt Scheme (2023) | Royal Commission | Rec. 17.1: legal framework for automated decision-making |
+| 4 | Stanford HAI (2026) | AI Index 2026 | Incidents 233 → 362; FMTI transparency 58 → 40; GDPR most cited influence (60%) vs OECD Principles (16%) |
+| 4 | Regulation 2024/1689, Recital 27 | EU law | AI Act builds on the HLEG's seven non-binding principles |
+| Background | Corrêa et al. (2023) | Review of 200 guidelines (Patterns) | At least 17 recurring principles |
+
+## Figure 1
+Built with `tools/figure1.py` from Fifth Quadrant (2024, p. 4): agreement versus implementation for each of the eight Principles. Values checked against the rendered source page.
+
+## Sources considered but not used
+- Metcalf, Moss & boyd (2019), Vakkuri et al. (2020) and Baldwin et al. (2026): full text or abstract could not be accessed in time to verify claims.

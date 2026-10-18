@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Header, Footer,
-  PageNumber, TableOfContents, PageBreak, LevelFormat,
+  PageNumber, TableOfContents, PageBreak, LevelFormat, ImageRun,
 } = require('docx');
 
 const ROOT = path.join(__dirname, '..');
@@ -36,15 +36,41 @@ function runs(text, base = {}) {
 }
 
 const BODY_SPACING = { line: 360, after: 160 };
+const FIGURE_WORDS = 50; // the brief counts each figure as 50 words
+const TEXT_WIDTH_PX = 576; // 6 inches at 96 dpi, inside 1-inch A4 margins
 let wordCount = 0;
+
+// Width and height of a PNG, read from its IHDR chunk.
+function pngSize(buf) { return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) }; }
 const count = (t) => { wordCount += t.replace(/[*`]/g, '').split(/\s+/).filter(Boolean).length; };
 
 function render(lines, { counted = false, hanging = false, pageBreakH1 = true } = {}) {
   const out = [];
   let firstH1 = true;
+  let inFigure = false;
   for (const raw of lines) {
     const l = raw.trim();
     if (!l) continue;
+    const img = l.match(/^!\[[^\]]*\]\(([^)]+)\)$/);
+    if (img) {
+      const data = fs.readFileSync(path.join(ROOT, 'report', img[1]));
+      const { width, height } = pngSize(data);
+      if (counted) wordCount += FIGURE_WORDS;
+      out.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [
+        new ImageRun({ type: 'png', data, transformation: { width: TEXT_WIDTH_PX, height: Math.round(TEXT_WIDTH_PX * height / width) } }),
+      ] }));
+      continue;
+    }
+    if (/^\*\*Figure \d+\*\*$/.test(l)) inFigure = true;
+    if (inFigure) {
+      // APA 7 figure block: bold number, italic title, image, then a note.
+      const isNote = l.startsWith('*Note.*');
+      if (counted) count(l);
+      out.push(new Paragraph({ keepNext: !isNote, spacing: { before: /^\*\*Figure/.test(l) ? 240 : 0, after: isNote ? 240 : 120 },
+        children: runs(l, isNote ? { size: 20 } : {}) }));
+      if (isNote) inFigure = false;
+      continue;
+    }
     if (l.startsWith('### ')) {
       if (counted) count(l.slice(4));
       out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(l.slice(4))] }));
@@ -95,7 +121,7 @@ const cover = [
   center('Student name: ' + STUDENT_NAME, { size: 26 }),
   center('Student ID: ' + STUDENT_ID, { size: 26 }),
   center('Due date: 18 October 2026', { size: 26 }),
-  center(`Word count (main report): ${wordCount.toLocaleString('en-AU')}`, { size: 26 }),
+  center(`Word count (main report, Figure 1 counted as 50 words): ${wordCount.toLocaleString('en-AU')}`, { size: 26 }),
   new Paragraph({ children: [new PageBreak()] }),
 ];
 
@@ -152,7 +178,7 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then((buf) => {
-  const out = path.join(ROOT, STUDENT_ID + '.docx');
+  const out = path.join(ROOT, process.argv[2] || STUDENT_ID + '.docx');
   fs.writeFileSync(out, buf);
   console.log('wrote', out, '| main report words:', wordCount);
 });

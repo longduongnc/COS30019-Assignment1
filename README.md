@@ -12,14 +12,15 @@
 |-----------|-------|-------------|--------|
 | 1 | 2–3 | Topic, key issues, draft Introduction (500–800 words) | ✅ Draft done — [`report/01-introduction.md`](report/01-introduction.md) |
 | 2 | 3–4 | Research and draft Findings (1,800–2,500 words) | ✅ Draft done — [`report/02-findings.md`](report/02-findings.md), research log in [`notes/research-log-weeks-3-4.md`](notes/research-log-weeks-3-4.md) |
-| 3 | 5 | Final report with Conclusion, citations, final submission on Canvas | ✅ Draft done — [`report/03-conclusion.md`](report/03-conclusion.md), [`report/00-executive-summary.md`](report/00-executive-summary.md), [`report/04-acknowledgements.md`](report/04-acknowledgements.md). Final review and Canvas submission remaining. |
+| 3 | 5 | Final report with Conclusion, citations, final submission on Canvas | ✅ Revised and expanded draft (Figure 1 added). Final review and Canvas submission remaining. |
 
-**Word count (main report):** Introduction ~685 + Findings ~1,600 + Conclusion ~410 = ~2,680 of 2,500–3,000.
+**Word count (main report):** about 2,886 of 2,500–3,000, with Figure 1 counted as 50 words. Revised and expanded on 18 October with 15 more sources (36 in total, 22 peer-reviewed).
 
 ## Repository structure
 - `report/`: report drafts, one file per section, plus `references.md`
 - `notes/`: topic selection, key issues and reading notes
-- `tools/build-docx.js`: builds the Word version of the report from the files in `report/` (`npm install docx`, then `node tools/build-docx.js`)
+- `report/figures/`: Figure 1, built by `tools/figure1.py` from Fifth Quadrant (2024) data
+- `tools/build-docx.js`: builds the Word version of the report from the files in `report/` (`npm install docx`, then `node tools/build-docx.js [output.docx]`)
 
 ## Base sources
 - **S1:** Australia's AI Ethics Principles (DISR, 2019) and Guidance for AI Adoption (DISR, 2025a)
