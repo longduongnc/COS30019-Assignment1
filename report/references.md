@@ -2,6 +2,8 @@
 
 Ali, S. J., Christin, A., Smart, A., & Katila, R. (2023). Walking the walk of AI ethics: Organizational challenges and the individualization of risk among ethics entrepreneurs. In *Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency* (pp. 217–226). ACM. https://doi.org/10.1145/3593013.3593990
 
+Anthropic. (2026). *Claude* (Opus 5.5 version) [Large language model]. https://claude.ai
+
 Ayling, J., & Chapman, A. (2022). Putting AI ethics to work: Are the tools fit for purpose? *AI and Ethics, 2*(3), 405–429. https://doi.org/10.1007/s43681-021-00084-x
 
 Bietti, E. (2020). From ethics washing to ethics bashing: A view on tech ethics from within moral philosophy. In *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency* (pp. 210–219). ACM. https://doi.org/10.1145/3351095.3372860
@@ -46,7 +48,7 @@ Munn, L. (2023). The uselessness of AI ethics. *AI and Ethics, 3*(3), 869–877.
 
 Pant, A., Hoda, R., Spiegler, S. V., Tantithamthavorn, C., & Turhan, B. (2024). Ethics in the age of AI: An analysis of AI practitioners' awareness and challenges. *ACM Transactions on Software Engineering and Methodology, 33*(3), Article 80. https://doi.org/10.1145/3635715
 
-Piper, K. (2019, April 4). Google cancels AI ethics board in response to outcry. *Vox*. https://www.vox.com/future-perfect/2019/4/4/18295933/google-cancels-ai-ethics-board
+Piper, K. (2019, April 4). Exclusive: Google cancels AI ethics board in response to outcry. *Vox*. https://www.vox.com/future-perfect/2019/4/4/18295933/google-cancels-ai-ethics-board
 
 Productivity Commission. (2025). *Harnessing data and digital technology* (Inquiry Report No. 111). Australian Government. https://assets.pc.gov.au/2025-12/data-digital_0.pdf
 
@@ -74,4 +76,4 @@ Whittlestone, J., Nyrup, R., Alexandrova, A., & Cave, S. (2019). The role and li
 
 ---
 
-**Source types:** 22 peer-reviewed journal articles and conference papers; 8 government, parliamentary and legal documents (DISR ×4, Productivity Commission, Senate committee, Robodebt Royal Commission, EU AI Act); 3 research reports (Fifth Quadrant ×2, sponsored by the National AI Centre; Stanford AI Index); 3 news articles (Evans; Piper; Schiffer & Newton), identified as media reports in the text.
+**Source types:** 22 peer-reviewed journal articles and conference papers; 8 government, parliamentary and legal documents (DISR ×4, Productivity Commission, Senate committee, Robodebt Royal Commission, EU AI Act); 3 research reports (Fifth Quadrant ×2, sponsored by the National AI Centre; Stanford AI Index); 3 news articles (Evans; Piper; Schiffer & Newton), identified as media reports in the text; 1 AI tool (Anthropic, 2026), also described in the Acknowledgements.
