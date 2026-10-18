@@ -121,6 +121,7 @@ const cover = [
   center('Student name: ' + STUDENT_NAME, { size: 26 }),
   center('Student ID: ' + STUDENT_ID, { size: 26 }),
   center('Due date: 18 October 2026', { size: 26 }),
+  center('Drafts and progress (GitHub): https://github.com/longduongnc/COS30019-Assignment1', { size: 22 }),
   center(`Word count (main report, Figure 1 counted as 50 words): ${wordCount.toLocaleString('en-AU')}`, { size: 26 }),
   new Paragraph({ children: [new PageBreak()] }),
 ];

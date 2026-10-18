@@ -8,4 +8,5 @@
 - **Fifth Quadrant website.** Source of the Australian Responsible AI Index 2024 and 2025 reports, including the data used in Figure 1.
 - **Australian Government, Parliament and Productivity Commission websites.** Sources of the Senate committee report, the Productivity Commission inquiry report and the Robodebt Royal Commission report.
 - **Stanford HAI website.** Source of the 2026 AI Index chapter on responsible AI.
+- **GitHub (https://github.com/longduongnc/COS30019-Assignment1).** Used to record progress for each milestone: topic selection and key issues, research log, and drafts of each section.
 - **Unit materials for COS30019.** The assignment brief and the two base sources (S1 and S2) defined the topic and the starting point for the research.

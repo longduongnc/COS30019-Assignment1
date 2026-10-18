@@ -12,7 +12,7 @@
 |-----------|-------|-------------|--------|
 | 1 | 2–3 | Topic, key issues, draft Introduction (500–800 words) | ✅ Draft done — [`report/01-introduction.md`](report/01-introduction.md) |
 | 2 | 3–4 | Research and draft Findings (1,800–2,500 words) | ✅ Draft done — [`report/02-findings.md`](report/02-findings.md), research log in [`notes/research-log-weeks-3-4.md`](notes/research-log-weeks-3-4.md) |
-| 3 | 5 | Final report with Conclusion, citations, final submission on Canvas | ✅ Revised and expanded draft (Figure 1 added). Final review and Canvas submission remaining. |
+| 3 | 5 | Final report with Conclusion, citations, final submission on Canvas | ✅ Submitted on Canvas, 18 Oct 2026, 23:33 (on time). |
 
 **Word count (main report):** about 2,939 of 2,500–3,000, with Figure 1 counted as 50 words. Revised and expanded on 18 October with 15 more sources (36 in total, 22 peer-reviewed).
 
